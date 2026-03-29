@@ -1,0 +1,14 @@
+form {
+    margin: auto;
+    width: 700px;
+    border: solid black 1px;
+    padding: 20px;
+}
+
+.result{
+    margin: 20px auto;
+    width: 800px;
+    border: solid black 1px;
+    padding: 20px;
+    background-color: aquamarine;
+}

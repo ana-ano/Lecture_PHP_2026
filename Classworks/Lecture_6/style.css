@@ -1,0 +1,12 @@
+form,.list{
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: antiquewhite;
+    border: solid 2px;
+}
+
+.list{
+    background-color:aquamarine;
+    min-height: 300px;
+}

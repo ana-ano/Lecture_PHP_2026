@@ -1,0 +1,11 @@
+.questions-tb{
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.questions-tb th, td{
+    border: solid 1px black;
+    padding: 9px;   
+}
+
