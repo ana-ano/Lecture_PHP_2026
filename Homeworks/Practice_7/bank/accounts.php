@@ -16,6 +16,7 @@ if(isset($_POST['user_id'])){
     header("location: accounts.php");
 }
 ?>
+<link rel="stylesheet" href="style.css">
 
 <form method="post">
 User ID - <input type="number" name="user_id"><br>
