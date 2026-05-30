@@ -1,14 +1,12 @@
 <?php
-
 class User {
+    private $pdo;
 
-    private $users = [
-        ["id" => 1, "name" => "გიორგი"],
-        ["id" => 2, "name" => "ნინო"],
-        ["id" => 3, "name" => "დავით"],
-    ];
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+    }
 
     public function getAll() {
-        return $this->users;
+        return $this->pdo->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
     }
 }
