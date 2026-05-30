@@ -1,3 +1,2 @@
 <?php
-$pdo = new PDO("mysql:host=localhost;dbname=mvc_demo;charset=utf8", "root", "");
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = mysqli_connect("localhost", "root", "", "mvc_demo");

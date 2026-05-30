@@ -1,12 +1,13 @@
 <?php
 class User {
-    private $pdo;
+    private $conn;
 
-    public function __construct($pdo) {
-        $this->pdo = $pdo;
+    public function __construct($conn) {
+        $this->conn = $conn;
     }
 
     public function getAll() {
-        return $this->pdo->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
+        $result = mysqli_query($this->conn, "SELECT * FROM users");
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 }
