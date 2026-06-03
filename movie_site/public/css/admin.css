@@ -1,0 +1,43 @@
+.admin-wrapper { display: flex; min-height: 100vh; }
+.sidebar {
+    width: 220px; background: #000; padding: 20px;
+    display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;
+}
+.sidebar .site-name { color: #e50914; font-size: 20px; font-weight: bold; margin-bottom: 20px; text-decoration: none; }
+.sidebar a {
+    color: #ccc; text-decoration: none; padding: 10px 15px;
+    border-radius: 5px; font-size: 14px;
+}
+.sidebar a:hover { background: #1f1f1f; color: #fff; }
+.sidebar a.active { background: #e50914; color: #fff; }
+.sidebar .back-link { margin-top: auto; color: #777; font-size: 13px; text-decoration: none; }
+
+.admin-content { flex: 1; padding: 30px; }
+.admin-content h2 { font-size: 24px; margin-bottom: 20px; color: #e50914; }
+
+.btn-add { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background: #28a745; color: #fff; border-radius: 5px; text-decoration: none; font-size: 14px; }
+.btn-add:hover { background: #218838; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 15px; border-bottom: 1px solid #2a2a2a; text-align: left; font-size: 14px; }
+th { background: #1a1a1a; color: #e50914; font-size: 13px; text-transform: uppercase; }
+tr:hover { background: #1a1a1a; }
+
+.btn { padding: 6px 14px; border-radius: 4px; text-decoration: none; font-size: 12px; margin-right: 5px; }
+.btn-edit { background: #f0ad4e; color: #000; }
+.btn-edit:hover { background: #e09d3e; }
+.btn-delete { background: #e50914; color: #fff; }
+.btn-delete:hover { background: #b20710; }
+
+.form-box { max-width: 550px; }
+.form-box input, .form-box textarea, .form-box select {
+    width: 100%; padding: 12px; margin-bottom: 15px;
+    background: #222; color: #fff; border: 1px solid #444;
+    border-radius: 5px; font-size: 14px;
+}
+.form-box input:focus, .form-box textarea:focus, .form-box select:focus { outline: none; border-color: #e50914; }
+.form-box button {
+    padding: 12px 30px; background: #e50914; color: #fff;
+    border: none; border-radius: 5px; cursor: pointer; font-size: 15px;
+}
+.form-box button:hover { background: #b20710; }

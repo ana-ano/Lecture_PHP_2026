@@ -1,0 +1,113 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a0000 50%, #0f0f0f 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-container::before {
+    content: '🎬';
+    font-size: 300px;
+    position: absolute;
+    opacity: 0.03;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.auth-box {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 50px 45px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgba(229, 9, 20, 0.3);
+    box-shadow: 0 0 40px rgba(229, 9, 20, 0.15), 0 20px 60px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.auth-box .logo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.auth-box .logo span {
+    color: #fff;
+}
+
+.auth-box h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #aaa;
+    text-align: center;
+    font-weight: normal;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.auth-box input:focus {
+    outline: none;
+    border-color: #e50914;
+    background: #222;
+}
+
+.auth-box input::placeholder { color: #555; }
+
+.auth-box button {
+    width: 100%;
+    padding: 14px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background 0.3s, transform 0.1s;
+    letter-spacing: 1px;
+}
+
+.auth-box button:hover { background: #b20710; transform: translateY(-1px); }
+.auth-box button:active { transform: translateY(0); }
+
+.auth-box .switch {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+    font-size: 14px;
+}
+
+.auth-box .switch a { color: #e50914; text-decoration: none; font-weight: bold; }
+.auth-box .switch a:hover { color: #ff1a1a; }
+
+.error {
+    background: rgba(229,9,20,0.1);
+    border: 1px solid #e50914;
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+}
