@@ -2,6 +2,9 @@
 $base = "D:/xampp/htdocs/Lecture_PHP_2026/movie_site/";
 
 // საჭირო ფაილების ჩატვირთვა
+$base = __DIR__ . "/../../";
+
+// საჭირო ფაილების ჩატვირთვა
 require_once $base . "config/database.php";
 require_once $base . "app/models/Movie.php";
 require_once $base . "app/models/Comment.php";
